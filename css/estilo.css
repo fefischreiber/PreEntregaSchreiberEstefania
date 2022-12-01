@@ -578,13 +578,14 @@ hr {
 }
 .name2 {
     font-size: 1rem;
-    padding-right: 30px;
+    padding-right: 20px;
     border-radius: 60px;
     width: 350px;
 }
 .mail1 {
     font-size: 1.5rem;
     padding-right: 30px;
+    padding-left: 20px;
 }
 .mail2 {
     font-size: 1rem;
@@ -595,7 +596,7 @@ hr {
 .phone1 {
     font-size: 1.5rem;
     padding-right: 30px;
-    
+    padding-left: 20px;
 }
 .phone2 {
     font-size: 1rem;
