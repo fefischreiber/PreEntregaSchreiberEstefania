@@ -1,0 +1,487 @@
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: rgba(104, 100, 100, 0.703);
+  box-sizing: border-box; }
+  body header {
+    background-color: rgba(186, 9, 9, 0.919);
+    padding: 10px;
+    list-style: none;
+    text-align: center; }
+    body header #logo {
+      text-align: center;
+      display: flex; }
+      body header #logo .logo1 {
+        width: 100px;
+        margin-left: 500px; }
+      body header #logo h1 {
+        font-size: 4rem;
+        padding-left: 30px;
+        padding-top: 20px; }
+      body header #logo .inicio {
+        border: none;
+        background-color: white;
+        background-color: rgba(104, 100, 100, 0.703);
+        border-radius: 100%;
+        margin-top: 50px;
+        padding: 10px; }
+      body header #logo .inicio a {
+        color: black;
+        text-decoration: none;
+        font-size: 1rem; }
+      body header #logo .inicio a:hover {
+        color: white;
+        background-color: black;
+        opacity: 60%;
+        border-radius: 100%;
+        padding: 15px; }
+  @media only screen and (max-width: 480px) {
+    body header {
+      padding: 0px; }
+      body header #logo {
+        text-align: center;
+        display: flex; }
+        body header #logo .logo1 {
+          margin-left: 90px;
+          margin-top: 20px;
+          height: 40px;
+          width: 40px; }
+        body header #logo h1 {
+          font-size: 2rem;
+          padding-left: 30px;
+          padding-top: 20px; }
+        body header #logo .inicio a {
+          font-size: 0.5rem; } }
+  body .navbar {
+    padding: 10px; }
+    body .navbar .navbar li {
+      font-size: 1.5rem;
+      padding: 5px; }
+    body .navbar .navbar li:hover {
+      border-radius: 90%;
+      opacity: 50%;
+      padding: 10px; }
+    body .navbar .nav-item:hover {
+      background-color: gray; }
+  @media only screen and (max-width: 768px) {
+    body .navbar li {
+      font-size: 1rem;
+      padding: 0px; } }
+  @media only screen and (max-width: 480px) {
+    body .navbar li {
+      font-size: 0.8rem; } }
+  body .container {
+    padding: 60px; }
+  body h3 {
+    font-size: 3rem;
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+    box-sizing: content-box; }
+  @media only screen and (max-width: 992px) {
+    body h3 {
+      font-size: 2.5rem;
+      margin: 0px;
+      padding: 0px;
+      text-align: center; } }
+  @media only screen and (max-width: 760px) {
+    body h3 {
+      font-size: 2rem;
+      margin: 0px;
+      padding: 0px;
+      text-align: center; } }
+  body .presentacion .nosotros {
+    list-style: none;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 0fr 0fr;
+    gap: 15px;
+    grid-template-areas: "subti subti" "texto equipo"; }
+    body .presentacion .nosotros .texto {
+      grid-area: texto;
+      font-size: 1.5rem; }
+    body .presentacion .nosotros .equipo {
+      grid-area: equipo;
+      size: 50px; }
+      body .presentacion .nosotros .equipo .foto {
+        height: 500px;
+        padding-top: 20px; }
+  @media only screen and (max-width: 992px) {
+    body .nosotros {
+      padding: 5px;
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 0fr 0fr 0fr;
+      gap: 15px;
+      grid-template-areas: "subti" "texto" "equipo"; }
+      body .nosotros .texto {
+        grid-area: texto;
+        font-size: 1rem;
+        padding: 0px;
+        margin: 0px;
+        text-align: center; }
+      body .nosotros .equipo {
+        grid-area: equipo;
+        size: 30px; }
+        body .nosotros .equipo .foto {
+          height: 400px;
+          padding-top: 20px;
+          padding-left: 80px; } }
+  @media only screen and (max-width: 760px) {
+    body .nosotros {
+      padding: 5px;
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 0fr 0fr 0fr;
+      gap: 15px;
+      grid-template-areas: "subti" "texto" "equipo"; }
+      body .nosotros .texto {
+        grid-area: texto;
+        font-size: 1rem;
+        padding: 5px;
+        margin: 5px;
+        text-align: center; }
+      body .nosotros .equipo {
+        grid-area: equipo;
+        size: 20px; }
+        body .nosotros .equipo .foto {
+          height: 300px;
+          padding-top: 20px;
+          text-align: center;
+          margin: 5px; } }
+  body .servicios {
+    margin: 30px;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 10px;
+    grid-template-areas: "eventos videoc publi produ"; }
+    body .servicios .eventos {
+      text-align: center;
+      grid-area: eventos; }
+      body .servicios .eventos .icoser {
+        height: 50px;
+        width: 50px; }
+      body .servicios .eventos .subser {
+        font-size: 2rem; }
+      body .servicios .eventos .descrip {
+        font-size: 1.5rem;
+        justify-content: center;
+        padding: 15px; }
+    body .servicios .videoc {
+      text-align: center;
+      grid-area: videoc; }
+      body .servicios .videoc .icoser {
+        height: 50px;
+        width: 50px; }
+      body .servicios .videoc .subser {
+        font-size: 2rem; }
+      body .servicios .videoc .descrip {
+        font-size: 1.5rem;
+        justify-content: center;
+        padding: 15px; }
+    body .servicios .publi {
+      text-align: center;
+      grid-area: publi; }
+      body .servicios .publi .icoser {
+        height: 50px;
+        width: 50px; }
+      body .servicios .publi .subser {
+        font-size: 2rem; }
+      body .servicios .publi .descrip {
+        font-size: 1.5rem;
+        justify-content: center;
+        padding: 15px; }
+    body .servicios .produ {
+      text-align: center;
+      grid-area: produ; }
+      body .servicios .produ .icoser {
+        height: 50px;
+        width: 50px; }
+      body .servicios .produ .subser {
+        font-size: 2rem; }
+      body .servicios .produ .descrip {
+        font-size: 1.5rem;
+        justify-content: center;
+        padding: 15px; }
+  body .presu {
+    margin: 50px;
+    text-align: center;
+    opacity: 80%; }
+    body .presu .presu1 {
+      padding: 10px;
+      border-radius: 45%;
+      border: none; }
+    body .presu .presu1 a {
+      color: black;
+      text-decoration: none;
+      font-size: 1rem; }
+    body .presu .presu1 a:hover {
+      color: white;
+      background-color: black;
+      border-radius: 45%;
+      opacity: 60%;
+      padding: 10px; }
+  @media only screen and (max-width: 768px) {
+    body .servicios {
+      margin: 10px;
+      padding: 5px;
+      display: grid;
+      grid-template-columns: 3fr 3fr;
+      grid-template-rows: 1fr 1fr;
+      gap: 5px;
+      grid-template-areas: "eventos videoc"  "publi produ"; }
+      body .servicios .eventos {
+        grid-area: eventos; }
+        body .servicios .eventos .icoser {
+          height: 40px;
+          width: 40px; }
+        body .servicios .eventos .subser {
+          font-size: 1.5rem; }
+        body .servicios .eventos .descrip {
+          font-size: 1.5rem;
+          justify-content: center;
+          padding: 10px; }
+      body .servicios .videoc {
+        grid-area: videoc; }
+        body .servicios .videoc .icoser {
+          height: 40px;
+          width: 40px; }
+        body .servicios .videoc .subser {
+          font-size: 1.5rem; }
+        body .servicios .videoc .descrip {
+          font-size: 1.5rem;
+          justify-content: center;
+          padding: 10px; }
+      body .servicios .publi {
+        grid-area: publi; }
+        body .servicios .publi .icoser {
+          height: 40px;
+          width: 40px; }
+        body .servicios .publi .subser {
+          font-size: 1.5rem; }
+        body .servicios .publi .descrip {
+          font-size: 1.5rem;
+          justify-content: center;
+          padding: 10px; }
+      body .servicios .produ {
+        grid-area: produ; }
+        body .servicios .produ .icoser {
+          height: 40px;
+          width: 40px; }
+        body .servicios .produ .subser {
+          font-size: 1.5rem; }
+        body .servicios .produ .descrip {
+          font-size: 1.5rem;
+          justify-content: center;
+          padding: 10px; } }
+  @media only screen and (max-width: 480px) {
+    body .servicios {
+      margin: 10px;
+      padding: 5px;
+      display: grid;
+      grid-template-columns: 3fr 3fr;
+      grid-template-rows: 1fr 1fr;
+      gap: 5px;
+      grid-template-areas: "eventos videoc"  "publi produ"; }
+      body .servicios .eventos {
+        grid-area: eventos; }
+        body .servicios .eventos .icoser {
+          height: 40px;
+          width: 40px; }
+        body .servicios .eventos .subser {
+          font-size: 1.5rem; }
+        body .servicios .eventos .descrip {
+          font-size: 1rem;
+          justify-content: center;
+          padding: 10px; }
+      body .servicios .videoc {
+        grid-area: videoc; }
+        body .servicios .videoc .icoser {
+          height: 40px;
+          width: 40px; }
+        body .servicios .videoc .subser {
+          font-size: 1.5rem; }
+        body .servicios .videoc .descrip {
+          font-size: 1rem;
+          justify-content: center;
+          padding: 10px; }
+      body .servicios .publi {
+        grid-area: publi; }
+        body .servicios .publi .icoser {
+          height: 40px;
+          width: 40px; }
+        body .servicios .publi .subser {
+          font-size: 1.5rem; }
+        body .servicios .publi .descrip {
+          font-size: 1rem;
+          justify-content: center;
+          padding: 10px; }
+      body .servicios .produ {
+        grid-area: produ; }
+        body .servicios .produ .icoser {
+          height: 40px;
+          width: 40px; }
+        body .servicios .produ .subser {
+          font-size: 1.5rem; }
+        body .servicios .produ .descrip {
+          font-size: 1rem;
+          justify-content: center;
+          padding: 10px; } }
+  body .contact {
+    padding: 10px;
+    margin: 10px;
+    display: inline; }
+    body .contact .form {
+      margin: 10px;
+      padding-left: 40px;
+      padding-top: 20px;
+      border-style: none;
+      text-align: justify; }
+      body .contact .form .name .name1 {
+        font-size: 1.5rem;
+        padding-right: 30px; }
+      body .contact .form .name .name2 {
+        font-size: 1rem;
+        padding-right: 20px;
+        border-radius: 60px;
+        width: 350px; }
+      body .contact .form .mail .mail1 {
+        font-size: 1.5rem;
+        padding-right: 100px;
+        padding-left: 20px; }
+      body .contact .form .mail .mail2 {
+        font-size: 1rem;
+        padding-right: 30px;
+        border-radius: 60px;
+        width: 400px; }
+      body .contact .form .phone .phone1 {
+        font-size: 1.5rem;
+        padding-right: 70px;
+        padding-left: 20px; }
+      body .contact .form .phone .phone2 {
+        font-size: 1rem;
+        padding-right: 30px;
+        border-radius: 60px;
+        width: 400px; }
+      body .contact .form .tex .tex1 {
+        font-size: 1.5rem;
+        padding-right: 30px;
+        padding-bottom: 20px; }
+      body .contact .form .tex .tex2 {
+        font-size: 1rem;
+        padding-right: 30px;
+        border-radius: 60px;
+        width: 600px; }
+      body .contact .form .botones {
+        padding-left: 100px; }
+        body .contact .form .botones input {
+          font-size: 1rem;
+          margin-left: 50px;
+          border-radius: 40%;
+          border: none;
+          padding: 10px;
+          background-color: white; }
+  body .pol {
+    box-sizing: border-box;
+    height: 600px;
+    overflow: auto;
+    margin-top: 40px;
+    margin-bottom: 40px; }
+    body .pol .teryco {
+      margin: 20px;
+      padding: 20px; }
+      body .pol .teryco .subti {
+        font-size: 1.5rem;
+        text-align: center;
+        text-decoration: underline;
+        padding: 10px; }
+      body .pol .teryco .texto1 {
+        font-size: 1rem;
+        padding: 0.5rem;
+        margin: 0.5rem;
+        text-align: justify; }
+    body .pol .politica {
+      margin: 20px;
+      padding: 20px; }
+      body .pol .politica .subti {
+        font-size: 1.5rem;
+        text-align: center;
+        text-decoration: underline;
+        padding: 10px; }
+      body .pol .politica .texto2 {
+        font-size: 1rem;
+        padding: 0.5rem;
+        margin: 0.5rem;
+        text-align: justify; }
+  body footer {
+    background-color: rgba(186, 9, 9, 0.919);
+    margin: 0 auto;
+    padding: 0 auto;
+    box-sizing: border-box; }
+    body footer .politicas .item2 {
+      padding: 10px;
+      margin-top: 10px;
+      margin-left: 20px;
+      border: none;
+      font-size: 10px;
+      background-color: white;
+      background-color: rgba(128, 128, 123, 0.38);
+      border-radius: 60%; }
+    body footer .politicas .item2 a {
+      color: black;
+      text-decoration: none;
+      font-size: 1rem;
+      font-family: "Licorice-Regular";
+      margin-bottom: 0;
+      margin-top: 2rem;
+      padding: 0.5rem; }
+    body footer .politicas .item2 a:hover {
+      color: white;
+      background-color: black;
+      border-radius: 100%;
+      opacity: 60%;
+      padding: 10px; }
+    body footer .section2 {
+      list-style: none; }
+      body footer .section2 h4 {
+        font-size: 1rem;
+        display: flex;
+        color: black;
+        margin-left: 1rem;
+        padding-left: 0.5rem;
+        padding-top: 1rem;
+        text-decoration: none;
+        display: list-item; }
+    body footer .section3 {
+      margin: 0;
+      padding: 0;
+      text-align: right; }
+      body footer .section3 .item4 {
+        height: 50px;
+        padding: 0.5rem;
+        background-color: none;
+        margin-right: 1.5rem; }
+      body footer .section3 .item5 {
+        height: 90px;
+        padding: 1.5rem;
+        position: fixed;
+        right: 3rem;
+        bottom: 1rem;
+        opacity: 80%; }
+    body footer .section4 {
+      list-style: none;
+      margin: 20px auto;
+      text-align: center; }
+      body footer .section4 .item6 {
+        list-style: none;
+        display: inline-block;
+        padding: 1rem; }
+        body footer .section4 .item6 .icono {
+          height: 30px;
+          justify-content: center; }
+    body footer h5 {
+      font-size: 0.8rem;
+      color: black;
+      text-align: center;
+      padding-bottom: 20px; }
