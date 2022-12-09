@@ -1,3 +1,201 @@
+@media only screen and (max-width: 480px) {
+  header {
+    padding: 0px; }
+    header #logo {
+      text-align: center;
+      display: flex; }
+      header #logo .logo1 {
+        margin-left: 90px;
+        margin-top: 20px;
+        height: 40px;
+        width: 40px; }
+      header #logo h1 {
+        font-size: 2rem;
+        padding-left: 30px;
+        padding-top: 20px; }
+      header #logo .inicio a {
+        font-size: 0.5rem; } }
+
+@media only screen and (max-width: 768px) {
+  .navbar li {
+    font-size: 1rem;
+    padding: 0px; } }
+
+@media only screen and (max-width: 480px) {
+  .navbar li {
+    font-size: 0.8rem; } }
+
+@media only screen and (max-width: 768px) {
+  h3 {
+    font-size: 2.5rem;
+    margin: 0px;
+    padding: 0px;
+    text-align: center; } }
+
+@media only screen and (max-width: 768px) {
+  h3 {
+    font-size: 2rem;
+    margin: 0px;
+    padding: 0px;
+    text-align: center; } }
+
+@media only screen and (max-width: 768px) {
+  .presentacion .nosotros {
+    padding: 5px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0fr 0fr 0fr;
+    gap: 15px;
+    grid-template-areas: "subti" "texto" "equipo"; }
+    .presentacion .nosotros .texto {
+      grid-area: texto;
+      font-size: 1rem;
+      padding: 0px;
+      margin: 0px;
+      text-align: center; }
+    .presentacion .nosotros .equipo {
+      grid-area: equipo;
+      size: 30px; }
+      .presentacion .nosotros .equipo .foto {
+        height: 400px;
+        padding-top: 20px;
+        padding-left: 80px; } }
+
+@media only screen and (max-width: 480px) {
+  .presentacion .nosotros {
+    padding: 5px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0fr 0fr 0fr;
+    gap: 15px;
+    grid-template-areas: "subti" "texto" "equipo"; }
+    .presentacion .nosotros .texto {
+      grid-area: texto;
+      font-size: 1rem;
+      padding: 5px;
+      margin: 5px;
+      text-align: center; }
+    .presentacion .nosotros .equipo {
+      grid-area: equipo;
+      size: 20px; }
+      .presentacion .nosotros .equipo .foto {
+        height: 300px;
+        padding-top: 20px;
+        text-align: center;
+        margin: 5px; } }
+
+@media only screen and (max-width: 768px) {
+  .servicios {
+    margin: 10px;
+    padding: 5px;
+    display: grid;
+    grid-template-columns: 3fr 3fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 5px;
+    grid-template-areas: "eventos videoc"  "publi produ"; }
+    .servicios .eventos {
+      grid-area: eventos; }
+      .servicios .eventos .icoser {
+        height: 40px;
+        width: 40px; }
+      .servicios .eventos .subser {
+        font-size: 1.5rem; }
+      .servicios .eventos .descrip {
+        font-size: 1.5rem;
+        justify-content: center;
+        padding: 10px; }
+    .servicios .videoc {
+      grid-area: videoc; }
+      .servicios .videoc .icoser {
+        height: 40px;
+        width: 40px; }
+      .servicios .videoc .subser {
+        font-size: 1.5rem; }
+      .servicios .videoc .descrip {
+        font-size: 1.5rem;
+        justify-content: center;
+        padding: 10px; }
+    .servicios .publi {
+      grid-area: publi; }
+      .servicios .publi .icoser {
+        height: 40px;
+        width: 40px; }
+      .servicios .publi .subser {
+        font-size: 1.5rem; }
+      .servicios .publi .descrip {
+        font-size: 1.5rem;
+        justify-content: center;
+        padding: 10px; }
+    .servicios .produ {
+      grid-area: produ; }
+      .servicios .produ .icoser {
+        height: 40px;
+        width: 40px; }
+      .servicios .produ .subser {
+        font-size: 1.5rem; }
+      .servicios .produ .descrip {
+        font-size: 1.5rem;
+        justify-content: center;
+        padding: 10px; } }
+
+@media only screen and (max-width: 480px) {
+  .servicios {
+    margin: 10px;
+    padding: 5px;
+    display: grid;
+    grid-template-columns: 3fr 3fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 5px;
+    grid-template-areas: "eventos videoc"  "publi produ"; }
+    .servicios .eventos {
+      grid-area: eventos; }
+      .servicios .eventos .icoser {
+        height: 40px;
+        width: 40px; }
+      .servicios .eventos .subser {
+        font-size: 1.5rem; }
+      .servicios .eventos .descrip {
+        font-size: 1rem;
+        justify-content: center;
+        padding: 10px; }
+    .servicios .videoc {
+      grid-area: videoc; }
+      .servicios .videoc .icoser {
+        height: 40px;
+        width: 40px; }
+      .servicios .videoc .subser {
+        font-size: 1.5rem; }
+      .servicios .videoc .descrip {
+        font-size: 1rem;
+        justify-content: center;
+        padding: 10px; }
+    .servicios .publi {
+      grid-area: publi; }
+      .servicios .publi .icoser {
+        height: 40px;
+        width: 40px; }
+      .servicios .publi .subser {
+        font-size: 1.5rem; }
+      .servicios .publi .descrip {
+        font-size: 1rem;
+        justify-content: center;
+        padding: 10px; }
+    .servicios .produ {
+      grid-area: produ; }
+      .servicios .produ .icoser {
+        height: 40px;
+        width: 40px; }
+      .servicios .produ .subser {
+        font-size: 1.5rem; }
+      .servicios .produ .descrip {
+        font-size: 1rem;
+        justify-content: center;
+        padding: 10px; } }
+
+@media only screen and (max-width: 480px) {
+  .section2 h4 {
+    font-size: 0.5rem; } }
+
 body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   background-color: rgba(104, 100, 100, 0.703);
@@ -34,23 +232,6 @@ body {
         opacity: 60%;
         border-radius: 100%;
         padding: 15px; }
-  @media only screen and (max-width: 480px) {
-    body header {
-      padding: 0px; }
-      body header #logo {
-        text-align: center;
-        display: flex; }
-        body header #logo .logo1 {
-          margin-left: 90px;
-          margin-top: 20px;
-          height: 40px;
-          width: 40px; }
-        body header #logo h1 {
-          font-size: 2rem;
-          padding-left: 30px;
-          padding-top: 20px; }
-        body header #logo .inicio a {
-          font-size: 0.5rem; } }
   body .navbar {
     padding: 10px; }
     body .navbar .navbar li {
@@ -62,13 +243,6 @@ body {
       padding: 10px; }
     body .navbar .nav-item:hover {
       background-color: gray; }
-  @media only screen and (max-width: 768px) {
-    body .navbar li {
-      font-size: 1rem;
-      padding: 0px; } }
-  @media only screen and (max-width: 480px) {
-    body .navbar li {
-      font-size: 0.8rem; } }
   body .container {
     padding: 60px; }
   body h3 {
@@ -77,18 +251,6 @@ body {
     padding: 0px;
     text-align: center;
     box-sizing: content-box; }
-  @media only screen and (max-width: 992px) {
-    body h3 {
-      font-size: 2.5rem;
-      margin: 0px;
-      padding: 0px;
-      text-align: center; } }
-  @media only screen and (max-width: 760px) {
-    body h3 {
-      font-size: 2rem;
-      margin: 0px;
-      padding: 0px;
-      text-align: center; } }
   body .presentacion .nosotros {
     list-style: none;
     padding: 20px;
@@ -106,49 +268,6 @@ body {
       body .presentacion .nosotros .equipo .foto {
         height: 500px;
         padding-top: 20px; }
-  @media only screen and (max-width: 992px) {
-    body .nosotros {
-      padding: 5px;
-      display: grid;
-      grid-template-columns: 1fr;
-      grid-template-rows: 0fr 0fr 0fr;
-      gap: 15px;
-      grid-template-areas: "subti" "texto" "equipo"; }
-      body .nosotros .texto {
-        grid-area: texto;
-        font-size: 1rem;
-        padding: 0px;
-        margin: 0px;
-        text-align: center; }
-      body .nosotros .equipo {
-        grid-area: equipo;
-        size: 30px; }
-        body .nosotros .equipo .foto {
-          height: 400px;
-          padding-top: 20px;
-          padding-left: 80px; } }
-  @media only screen and (max-width: 760px) {
-    body .nosotros {
-      padding: 5px;
-      display: grid;
-      grid-template-columns: 1fr;
-      grid-template-rows: 0fr 0fr 0fr;
-      gap: 15px;
-      grid-template-areas: "subti" "texto" "equipo"; }
-      body .nosotros .texto {
-        grid-area: texto;
-        font-size: 1rem;
-        padding: 5px;
-        margin: 5px;
-        text-align: center; }
-      body .nosotros .equipo {
-        grid-area: equipo;
-        size: 20px; }
-        body .nosotros .equipo .foto {
-          height: 300px;
-          padding-top: 20px;
-          text-align: center;
-          margin: 5px; } }
   body .servicios {
     margin: 30px;
     padding: 20px;
@@ -222,112 +341,6 @@ body {
       border-radius: 45%;
       opacity: 60%;
       padding: 10px; }
-  @media only screen and (max-width: 768px) {
-    body .servicios {
-      margin: 10px;
-      padding: 5px;
-      display: grid;
-      grid-template-columns: 3fr 3fr;
-      grid-template-rows: 1fr 1fr;
-      gap: 5px;
-      grid-template-areas: "eventos videoc"  "publi produ"; }
-      body .servicios .eventos {
-        grid-area: eventos; }
-        body .servicios .eventos .icoser {
-          height: 40px;
-          width: 40px; }
-        body .servicios .eventos .subser {
-          font-size: 1.5rem; }
-        body .servicios .eventos .descrip {
-          font-size: 1.5rem;
-          justify-content: center;
-          padding: 10px; }
-      body .servicios .videoc {
-        grid-area: videoc; }
-        body .servicios .videoc .icoser {
-          height: 40px;
-          width: 40px; }
-        body .servicios .videoc .subser {
-          font-size: 1.5rem; }
-        body .servicios .videoc .descrip {
-          font-size: 1.5rem;
-          justify-content: center;
-          padding: 10px; }
-      body .servicios .publi {
-        grid-area: publi; }
-        body .servicios .publi .icoser {
-          height: 40px;
-          width: 40px; }
-        body .servicios .publi .subser {
-          font-size: 1.5rem; }
-        body .servicios .publi .descrip {
-          font-size: 1.5rem;
-          justify-content: center;
-          padding: 10px; }
-      body .servicios .produ {
-        grid-area: produ; }
-        body .servicios .produ .icoser {
-          height: 40px;
-          width: 40px; }
-        body .servicios .produ .subser {
-          font-size: 1.5rem; }
-        body .servicios .produ .descrip {
-          font-size: 1.5rem;
-          justify-content: center;
-          padding: 10px; } }
-  @media only screen and (max-width: 480px) {
-    body .servicios {
-      margin: 10px;
-      padding: 5px;
-      display: grid;
-      grid-template-columns: 3fr 3fr;
-      grid-template-rows: 1fr 1fr;
-      gap: 5px;
-      grid-template-areas: "eventos videoc"  "publi produ"; }
-      body .servicios .eventos {
-        grid-area: eventos; }
-        body .servicios .eventos .icoser {
-          height: 40px;
-          width: 40px; }
-        body .servicios .eventos .subser {
-          font-size: 1.5rem; }
-        body .servicios .eventos .descrip {
-          font-size: 1rem;
-          justify-content: center;
-          padding: 10px; }
-      body .servicios .videoc {
-        grid-area: videoc; }
-        body .servicios .videoc .icoser {
-          height: 40px;
-          width: 40px; }
-        body .servicios .videoc .subser {
-          font-size: 1.5rem; }
-        body .servicios .videoc .descrip {
-          font-size: 1rem;
-          justify-content: center;
-          padding: 10px; }
-      body .servicios .publi {
-        grid-area: publi; }
-        body .servicios .publi .icoser {
-          height: 40px;
-          width: 40px; }
-        body .servicios .publi .subser {
-          font-size: 1.5rem; }
-        body .servicios .publi .descrip {
-          font-size: 1rem;
-          justify-content: center;
-          padding: 10px; }
-      body .servicios .produ {
-        grid-area: produ; }
-        body .servicios .produ .icoser {
-          height: 40px;
-          width: 40px; }
-        body .servicios .produ .subser {
-          font-size: 1.5rem; }
-        body .servicios .produ .descrip {
-          font-size: 1rem;
-          justify-content: center;
-          padding: 10px; } }
   body .contact {
     padding: 10px;
     margin: 10px;
@@ -426,7 +439,7 @@ body {
       border: none;
       font-size: 10px;
       background-color: white;
-      background-color: rgba(128, 128, 123, 0.38);
+      background-color: rgba(104, 100, 100, 0.703);
       border-radius: 60%; }
     body footer .politicas .item2 a {
       color: black;

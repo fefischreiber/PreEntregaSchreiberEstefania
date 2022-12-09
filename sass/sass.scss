@@ -1,4 +1,21 @@
 @import "varcolor";
+@import "mediaq";
+
+@mixin servicios () {
+    .icoser {
+        height: 50px;
+        width: 50px; 
+    }
+    .subser {
+        font-size: 2rem;
+    }
+    .descrip {
+        font-size: 1.5rem;
+        justify-content:center;
+        padding: 15px;
+    }
+}
+
 
 body {
     font-family:Verdana, Geneva, Tahoma, sans-serif;
@@ -33,7 +50,7 @@ body {
                 padding: 10px;
             } 
             .inicio a{
-                color: black;
+                color: $letra;
                 text-decoration: none;
                 font-size: 1rem;
             } 
@@ -43,31 +60,6 @@ body {
                 opacity: 60%;
                 border-radius: 100%;
                 padding: 15px;
-            }
-        }
-    }
-    @media only screen and (max-width: 480px) {
-        header {
-            padding: 0px;
-
-            #logo{
-                text-align: center;
-                display: flex;
-
-                .logo1 {
-                    margin-left: 90px;
-                    margin-top: 20px;
-                    height: 40px;
-                    width: 40px;
-                }
-                h1 {
-                    font-size: 2rem;
-                    padding-left: 30px;
-                    padding-top: 20px;
-                }
-                .inicio a{
-                    font-size: 0.5rem;
-                } 
             }
         }
     }
@@ -87,17 +79,6 @@ body {
             background-color: gray;
         }
     }
-    @media only screen and (max-width: 768px){
-        .navbar li {
-        font-size: 1rem;
-        padding: 0px;
-        }
-    }
-    @media only screen and (max-width: 480px){
-        .navbar li {
-        font-size: 0.8rem;
-        }
-    }
     .container{
         padding: 60px;
     }
@@ -107,22 +88,6 @@ body {
         padding: 0px;
         text-align: center;
         box-sizing: content-box;
-    }
-    @media only screen and (max-width: 992px) {
-        h3 {
-            font-size: 2.5rem;
-            margin: 0px;
-            padding: 0px;
-            text-align: center;
-        }
-    }
-     @media only screen and (max-width:760px){
-         h3 {
-             font-size: 2rem;
-             margin: 0px;
-             padding: 0px;
-             text-align: center;
-        }
     }
     .presentacion {
         .nosotros{
@@ -152,67 +117,6 @@ body {
 
         }
     }
-    @media only screen and (max-width: 992px) {
-        .nosotros{
-            padding: 5px;
-            display: grid;
-            grid-template-columns: 1fr;
-            grid-template-rows: 0fr 0fr 0fr;
-            gap: 15px;
-            grid-template-areas: 
-                "subti"
-                "texto"
-                "equipo";
-                
-            .texto{
-                grid-area: texto;
-                font-size: 1rem;
-                padding: 0px;
-                margin: 0px;
-                text-align: center;
-            }
-            .equipo {
-                grid-area: equipo;
-                size: 30px;
-                .foto{
-                    height: 400px;
-                    padding-top: 20px;
-                    padding-left: 80px;
-                }
-            }
-        }
-    }
-    @media only screen and (max-width:760px){
-        .nosotros{
-        padding: 5px;
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 0fr 0fr 0fr;
-        gap: 15px;
-        grid-template-areas: 
-            "subti"
-            "texto"
-            "equipo";
-            .texto{
-                grid-area: texto;
-                font-size: 1rem;
-                padding: 5px;
-                margin: 5px;
-                text-align: center;
-            }
-            .equipo {
-                grid-area: equipo;
-                size: 20px;
-                .foto{
-                    height: 300px;
-                    padding-top: 20px;
-                    text-align: center;
-                    margin: 5px;
-                }
-            }
-        }
-
-    }
     .servicios {
         margin: 30px;
         padding: 20px;
@@ -225,66 +129,22 @@ body {
             .eventos{
                 text-align: center;
                 grid-area: eventos;
-                .icoser {
-                    height: 50px;
-                    width: 50px; 
-                }
-                .subser {
-                    font-size: 2rem;
-                }
-                .descrip {
-                    font-size: 1.5rem;
-                    justify-content:center;
-                    padding: 15px;
-                }
+                @include servicios ();
             }
             .videoc {
                 text-align: center;
                 grid-area: videoc;
-                .icoser {
-                    height: 50px;
-                    width: 50px; 
-                }
-                .subser {
-                    font-size: 2rem;
-                }
-                .descrip {
-                    font-size: 1.5rem;
-                    justify-content:center;
-                    padding: 15px;
-                }
+                @include servicios ();
             }
             .publi{
                 text-align: center;
                 grid-area: publi;
-                .icoser {
-                    height: 50px;
-                    width: 50px; 
-                }
-                .subser {
-                    font-size: 2rem;
-                }
-                .descrip {
-                    font-size: 1.5rem;
-                    justify-content:center;
-                    padding: 15px;
-                }
+                @include servicios ();
             }       
             .produ {
                 text-align: center;
                 grid-area: produ;
-                .icoser {
-                    height: 50px;
-                    width: 50px; 
-                }
-                .subser {
-                    font-size: 2rem;
-                }
-                .descrip {
-                    font-size: 1.5rem;
-                    justify-content:center;
-                    padding: 15px;
-                }
+                @include servicios ();
             }
     }
     .presu {
@@ -297,7 +157,7 @@ body {
             border: none;
         } 
         .presu1 a{
-            color: black;
+            color: $letra;
             text-decoration: none;
             font-size: 1rem;
         } 
@@ -309,157 +169,6 @@ body {
             padding: 10px;
         }
     }
-    
-    @media only screen and (max-width:768px){
-        .servicios {
-            margin: 10px;
-            padding: 5px;
-            display: grid;
-            grid-template-columns: 3fr 3fr;
-            grid-template-rows: 1fr 1fr;
-            gap: 5px;
-            grid-template-areas:
-                "eventos videoc" 
-                "publi produ";
-        
-            .eventos{
-                grid-area: eventos;
-                .icoser {
-                    height: 40px;
-                    width: 40px;
-                }
-                .subser {
-                    font-size: 1.5rem;
-                }
-                .descrip {
-                    font-size: 1.5rem;
-                    justify-content:center;
-                    padding: 10px;
-                }
-            }
-            .videoc {
-                grid-area: videoc;
-                .icoser {
-                    height: 40px;
-                    width: 40px;
-                }
-                .subser {
-                    font-size: 1.5rem;
-                }
-                .descrip {
-                    font-size: 1.5rem;
-                    justify-content:center;
-                    padding: 10px;
-                }
-            }
-            .publi{
-                grid-area: publi;
-                .icoser {
-                    height: 40px;
-                    width: 40px;
-                }
-                .subser {
-                    font-size: 1.5rem;
-                }
-                .descrip {
-                    font-size: 1.5rem;
-                    justify-content:center;
-                    padding: 10px;
-                }
-            }
-            .produ {
-                grid-area: produ;
-                .icoser {
-                    height: 40px;
-                    width: 40px;
-                }
-                .subser {
-                    font-size: 1.5rem;
-                }
-                .descrip {
-                    font-size: 1.5rem;
-                    justify-content:center;
-                    padding: 10px;
-                }
-            }
-        }
-    
-    }  
-    @media only screen and (max-width:480px){
-        .servicios {
-            margin: 10px;
-            padding: 5px;
-            display: grid;
-            grid-template-columns: 3fr 3fr;
-            grid-template-rows: 1fr 1fr;
-            gap: 5px;
-            grid-template-areas:
-                "eventos videoc" 
-                "publi produ";
-        
-            .eventos{
-                grid-area: eventos;
-                .icoser {
-                    height: 40px;
-                    width: 40px;
-                }
-                .subser {
-                    font-size: 1.5rem;
-                }
-                .descrip {
-                    font-size: 1rem;
-                    justify-content:center;
-                    padding: 10px;
-                }
-
-            }
-            .videoc {
-                grid-area: videoc;
-                .icoser {
-                    height: 40px;
-                    width: 40px;
-                }
-                .subser {
-                    font-size: 1.5rem;
-                }
-                .descrip {
-                    font-size: 1rem;
-                    justify-content:center;
-                    padding: 10px;
-                }
-            }
-            .publi{
-                grid-area: publi;
-                .icoser {
-                    height: 40px;
-                    width: 40px;
-                }
-                .subser {
-                    font-size: 1.5rem;
-                }
-                .descrip {
-                    font-size: 1rem;
-                    justify-content:center;
-                    padding: 10px;
-                }
-            }
-            .produ {
-                grid-area: produ;
-                .icoser {
-                    height: 40px;
-                    width: 40px;
-                }
-                .subser {
-                    font-size: 1.5rem;
-                }
-                .descrip {
-                    font-size: 1rem;
-                    justify-content:center;
-                    padding: 10px;
-                }
-            }
-        }
-    }  
     .contact {
         padding: 10px;
         margin: 10px;
@@ -597,11 +306,11 @@ body {
                 border:none;
                 font-size: 10px;
                 background-color:white;
-                background-color: rgba(128, 128, 123, 0.38);
+                background-color: $gris;
                 border-radius: 60%;
             } 
             .item2 a{
-                color: black;
+                color:$letra;
                 text-decoration: none;
                 font-size: 1rem;
                 font-family: "Licorice-Regular";
@@ -666,7 +375,7 @@ body {
         }
         h5 {
             font-size: 0.8rem;
-            color: black;
+            color: $letra;
             text-align: center;
             padding-bottom: 20px;
         }
