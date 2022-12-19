@@ -1,136 +1,137 @@
 body {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  background-color: rgba(104, 100, 100, 0.703);
-  box-sizing: border-box; }
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  background-color: rgba(248, 248, 250, 0.867); }
   body header {
-    background-color: rgba(186, 9, 9, 0.919);
-    padding: 10px;
+    background-color: rgba(8, 0, 0, 0.919);
     list-style: none;
-    text-align: center; }
+    text-align: center;
+    position: relative;
+    background-size: contain;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
     body header #logo {
-      text-align: center;
-      display: flex; }
+      display: inline-block;
+      list-style: none;
+      margin: 10px; }
       body header #logo .logo1 {
-        width: 100px;
-        margin-left: 500px; }
+        width: 200px;
+        justify-content: center; }
       body header #logo h1 {
         font-size: 4rem;
-        padding-left: 30px;
-        padding-top: 20px; }
-      body header #logo .inicio {
-        border: none;
-        background-color: white;
-        background-color: rgba(104, 100, 100, 0.703);
-        border-radius: 100%;
-        margin-top: 50px;
-        padding: 10px; }
-      body header #logo .inicio a {
-        color: black;
-        text-decoration: none;
-        font-size: 1rem; }
-      body header #logo .inicio a:hover {
+        justify-content: center;
         color: white;
-        background-color: black;
-        opacity: 60%;
-        border-radius: 100%;
-        padding: 15px; }
+        font-family: 'Handlee', cursive; }
+    body header .container-portada {
+      width: 100%;
+      height: 300px;
+      background-image: url(/produccion.jpg);
+      background-size: 200%;
+      animation: movimiento 10s infinite linear alternate; }
+
+@keyframes movimiento {
+  from {
+    background-position: bottom left; }
+  to {
+    background-position: top right; } }
+      body header .container-portada .capa-gradient {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        background: -webkit-linear-gradient(left, black #0672d0);
+        opacity: 0.5; }
+      body header .container-portada .container-details {
+        width: 100%;
+        max-width: 1200px;
+        text-align: center; }
+        body header .container-portada .container-details .details {
+          width: 40%;
+          max-width: 300px;
+          color: white;
+          display: inline-block;
+          padding: 40px; }
+          body header .container-portada .container-details .details .details img {
+            width: 0.1px;
+            height: 0.1px;
+            justify-content: center; }
   @media only screen and (max-width: 480px) {
     body header {
-      padding: 0px; }
-      body header #logo {
-        text-align: center;
-        display: flex; }
-        body header #logo .logo1 {
-          margin-left: 90px;
-          margin-top: 20px;
-          height: 40px;
-          width: 40px; }
-        body header #logo h1 {
-          font-size: 2rem;
-          padding-left: 30px;
-          padding-top: 20px; }
-        body header #logo .inicio a {
-          font-size: 0.5rem; } }
-  body .navbar {
+      background-color: rgba(8, 0, 0, 0.919);
+      list-style: none;
+      text-align: center;
+      position: relative;
+      background-size: contain; }
+      body header .logo1 {
+        height: 60px; } }
+  body .navbar .navbar li {
+    font-size: 1.5rem;
+    padding: 5px; }
+  body .navbar .navbar li:hover {
+    border-radius: 90%;
+    opacity: 50%;
     padding: 10px; }
-    body .navbar .navbar li {
-      font-size: 1.5rem;
-      padding: 5px; }
-    body .navbar .navbar li:hover {
-      border-radius: 90%;
-      opacity: 50%;
-      padding: 10px; }
-    body .navbar .nav-item:hover {
-      background-color: gray; }
-  @media only screen and (max-width: 768px) {
-    body .navbar li {
-      font-size: 1rem;
-      padding: 0px; } }
+  body .navbar .nav-item:hover {
+    background-color: gray; }
   body .container {
-    padding: 60px; }
+    margin-bottom: 40px; }
   body h3 {
     font-size: 3rem;
-    margin: 0px;
-    padding: 0px;
+    padding: 20px;
+    color: white;
     text-align: center;
-    box-sizing: content-box; }
+    box-sizing: content-box;
+    font-family: 'Handlee', cursive;
+    background-color: black; }
   @media only screen and (max-width: 768px) {
     body h3 {
       font-size: 2.5rem;
-      margin: 0px;
-      padding: 0px;
-      text-align: center; } }
+      padding: 10px; } }
   @media only screen and (max-width: 768px) {
     body h3 {
       font-size: 2rem;
-      margin: 0px;
-      padding: 0px;
-      text-align: center; } }
+      padding: 5px; } }
   body .presentacion .nosotros {
     list-style: none;
-    padding: 20px;
+    margin: 10px;
+    padding: 5px;
     display: grid;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: 0fr 0fr;
-    gap: 15px;
+    gap: 10px;
     grid-template-areas: "subti subti" "texto equipo"; }
     body .presentacion .nosotros .texto {
+      padding-top: 30px;
       grid-area: texto;
-      font-size: 1.5rem; }
+      font-size: 1.5rem;
+      font-family: 'Handlee', cursive; }
     body .presentacion .nosotros .equipo {
       grid-area: equipo;
-      size: 50px; }
+      size: 40px; }
       body .presentacion .nosotros .equipo .foto {
-        height: 500px;
-        padding-top: 20px; }
-  @media only screen and (max-width: 768px) {
+        height: 400px;
+        padding-top: 10px; }
+  @media only screen and (max-width: 1000px) {
     body .presentacion .nosotros {
-      padding: 5px;
       display: grid;
       grid-template-columns: 1fr;
       grid-template-rows: 0fr 0fr 0fr;
-      gap: 15px;
+      gap: 5px;
       grid-template-areas: "subti" "texto" "equipo"; }
       body .presentacion .nosotros .texto {
         grid-area: texto;
-        font-size: 1rem;
-        padding: 0px;
-        margin: 0px;
+        font-size: 1.5rem;
         text-align: center; }
       body .presentacion .nosotros .equipo {
         grid-area: equipo;
         size: 30px; }
         body .presentacion .nosotros .equipo .foto {
-          height: 400px;
-          padding-top: 20px;
-          padding-left: 80px; } }
+          height: 500px;
+          text-align: center; } }
   @media only screen and (max-width: 480px) {
     body .presentacion .nosotros {
       padding: 5px;
       display: grid;
       grid-template-columns: 1fr;
       grid-template-rows: 0fr 0fr 0fr;
-      gap: 15px;
+      gap: 5px;
       grid-template-areas: "subti" "texto" "equipo"; }
       body .presentacion .nosotros .texto {
         grid-area: texto;
@@ -142,9 +143,9 @@ body {
         grid-area: equipo;
         size: 20px; }
         body .presentacion .nosotros .equipo .foto {
-          height: 300px;
-          padding-top: 20px;
+          height: 200px;
           text-align: center;
+          padding: 5px;
           margin: 5px; } }
   body .servicios {
     margin: 30px;
@@ -157,50 +158,70 @@ body {
       text-align: center;
       grid-area: eventos; }
       body .servicios .eventos .icoser {
-        height: 50px;
-        width: 50px; }
+        height: 70px;
+        width: 70px;
+        border-radius: 50%; }
       body .servicios .eventos .subser {
-        font-size: 2rem; }
+        font-size: 2rem;
+        font-family: 'Handlee', cursive;
+        padding: 5px;
+        margin-top: 10px; }
       body .servicios .eventos .descrip {
         font-size: 1.5rem;
         justify-content: center;
-        padding: 15px; }
+        padding: 15px;
+        font-family: 'Handlee', cursive; }
     body .servicios .videoc {
       text-align: center;
       grid-area: videoc; }
       body .servicios .videoc .icoser {
-        height: 50px;
-        width: 50px; }
+        height: 70px;
+        width: 70px;
+        border-radius: 50%; }
       body .servicios .videoc .subser {
-        font-size: 2rem; }
+        font-size: 2rem;
+        font-family: 'Handlee', cursive;
+        padding: 5px;
+        margin-top: 10px; }
       body .servicios .videoc .descrip {
         font-size: 1.5rem;
         justify-content: center;
-        padding: 15px; }
+        padding: 15px;
+        font-family: 'Handlee', cursive; }
     body .servicios .publi {
       text-align: center;
       grid-area: publi; }
       body .servicios .publi .icoser {
-        height: 50px;
-        width: 50px; }
+        height: 70px;
+        width: 70px;
+        border-radius: 50%; }
       body .servicios .publi .subser {
-        font-size: 2rem; }
+        font-size: 2rem;
+        font-family: 'Handlee', cursive;
+        padding: 5px;
+        margin-top: 10px; }
       body .servicios .publi .descrip {
         font-size: 1.5rem;
         justify-content: center;
-        padding: 15px; }
+        padding: 15px;
+        font-family: 'Handlee', cursive; }
     body .servicios .produ {
       text-align: center;
       grid-area: produ; }
       body .servicios .produ .icoser {
-        height: 50px;
-        width: 50px; }
+        height: 70px;
+        width: 70px;
+        border-radius: 50%; }
       body .servicios .produ .subser {
-        font-size: 2rem; }
+        font-size: 2rem;
+        font-family: 'Handlee', cursive;
+        padding: 5px;
+        margin-top: 10px; }
       body .servicios .produ .descrip {
         font-size: 1.5rem;
         justify-content: center;
-        padding: 15px; }
+        padding: 15px;
+        font-family: 'Handlee', cursive; }
   @media only screen and (max-width: 768px) {
     body .servicios {
       margin: 10px;
@@ -218,7 +239,7 @@ body {
         body .servicios .eventos .subser {
           font-size: 1.5rem; }
         body .servicios .eventos .descrip {
-          font-size: 1.5rem;
+          font-size: 1.2rem;
           justify-content: center;
           padding: 10px; }
       body .servicios .videoc {
@@ -229,7 +250,7 @@ body {
         body .servicios .videoc .subser {
           font-size: 1.5rem; }
         body .servicios .videoc .descrip {
-          font-size: 1.5rem;
+          font-size: 1.2rem;
           justify-content: center;
           padding: 10px; }
       body .servicios .publi {
@@ -240,7 +261,7 @@ body {
         body .servicios .publi .subser {
           font-size: 1.5rem; }
         body .servicios .publi .descrip {
-          font-size: 1.5rem;
+          font-size: 1.2rem;
           justify-content: center;
           padding: 10px; }
       body .servicios .produ {
@@ -251,7 +272,7 @@ body {
         body .servicios .produ .subser {
           font-size: 1.5rem; }
         body .servicios .produ .descrip {
-          font-size: 1.5rem;
+          font-size: 1.2rem;
           justify-content: center;
           padding: 10px; } }
   @media only screen and (max-width: 480px) {
@@ -314,27 +335,47 @@ body {
     body .presu .presu1 {
       padding: 10px;
       border-radius: 45%;
-      border: none; }
+      border: none;
+      background-color: black; }
     body .presu .presu1 a {
-      color: black;
+      color: aqua;
       text-decoration: none;
-      font-size: 1rem; }
+      font-size: 1.5rem; }
     body .presu .presu1 a:hover {
       color: white;
       background-color: black;
       border-radius: 45%;
       opacity: 60%;
       padding: 10px; }
+  @media only screen and (max-width: 768px) {
+    body .presu .presu1 a {
+      color: aqua;
+      text-decoration: none;
+      font-size: 1rem; } }
+  @media only screen and (max-width: 480px) {
+    body .presu {
+      margin: 50px;
+      text-align: center;
+      opacity: 80%; }
+      body .presu .presu1 {
+        padding: 10px;
+        border-radius: 45%;
+        border: none;
+        background-color: black; }
+      body .presu .presu1 a {
+        color: aqua;
+        text-decoration: none;
+        font-size: 0.8rem; } }
   body .contact {
     padding: 10px;
     margin: 10px;
     display: inline; }
     body .contact .form {
-      margin: 10px;
-      padding-left: 40px;
-      padding-top: 20px;
-      border-style: none;
-      text-align: justify; }
+      list-style: none;
+      text-align: center;
+      position: relative;
+      background-size: contain;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
       body .contact .form .name .name1 {
         font-size: 1.5rem;
         padding-right: 30px; }
@@ -345,17 +386,15 @@ body {
         width: 350px; }
       body .contact .form .mail .mail1 {
         font-size: 1.5rem;
-        padding-right: 100px;
-        padding-left: 20px; }
+        padding-right: 100px; }
       body .contact .form .mail .mail2 {
         font-size: 1rem;
-        padding-right: 30px;
+        padding-right: 35px;
         border-radius: 60px;
         width: 400px; }
       body .contact .form .phone .phone1 {
         font-size: 1.5rem;
-        padding-right: 70px;
-        padding-left: 20px; }
+        padding-right: 70px; }
       body .contact .form .phone .phone2 {
         font-size: 1rem;
         padding-right: 30px;
@@ -368,10 +407,10 @@ body {
       body .contact .form .tex .tex2 {
         font-size: 1rem;
         padding-right: 30px;
-        border-radius: 60px;
+        border-radius: 20px;
         width: 600px; }
       body .contact .form .botones {
-        padding-left: 100px; }
+        text-align: center; }
         body .contact .form .botones input {
           font-size: 1rem;
           margin-left: 50px;
@@ -379,6 +418,84 @@ body {
           border: none;
           padding: 10px;
           background-color: white; }
+  @media only screen and (max-width: 768px) {
+    body .contact {
+      padding: 10px; }
+      body .contact .form {
+        text-align: center; }
+        body .contact .form .name .name1 {
+          font-size: 1rem;
+          padding-right: 50px; }
+        body .contact .form .name .name2 {
+          font-size: 1rem;
+          padding-right: 20px;
+          border-radius: 60px;
+          width: 350px; }
+        body .contact .form .mail .mail1 {
+          font-size: 1rem;
+          padding-right: 70px;
+          margin-left: 20px; }
+        body .contact .form .mail .mail2 {
+          font-size: 1rem;
+          padding-right: 35px;
+          border-radius: 60px;
+          width: 400px; }
+        body .contact .form .phone .phone1 {
+          font-size: 1rem;
+          padding-right: 70px; }
+        body .contact .form .phone .phone2 {
+          font-size: 1rem;
+          padding-right: 30px;
+          border-radius: 60px;
+          width: 400px; }
+        body .contact .form .tex .tex1 {
+          font-size: 1rem;
+          padding-right: 30px;
+          padding-bottom: 20px; }
+        body .contact .form .tex .tex2 {
+          font-size: 1rem;
+          padding-right: 30px;
+          border-radius: 20px;
+          width: 600px; }
+        body .contact .form .botones {
+          text-align: center; }
+          body .contact .form .botones input {
+            font-size: 0.8rem;
+            margin-left: 50px;
+            border-radius: 40%;
+            border: none;
+            padding: 10px;
+            background-color: white; } }
+  @media only screen and (max-width: 480px) {
+    body .contact {
+      padding: 10px;
+      margin: 10px;
+      display: inline; }
+      body .contact .form .name .name1 {
+        font-size: 0.8rem; }
+      body .contact .form .name .name2 {
+        font-size: 0.8rem; }
+      body .contact .form .mail .mail1 {
+        font-size: 0.8rem; }
+      body .contact .form .mail .mail2 {
+        font-size: 0.8rem; }
+      body .contact .form .phone .phone1 {
+        font-size: 0.8rem; }
+      body .contact .form .phone .phone2 {
+        font-size: 0.8rem; }
+      body .contact .form .tex .tex1 {
+        font-size: 0.8rem; }
+      body .contact .form .tex .tex2 {
+        font-size: 0.8rem; }
+      body .contact .form .botones {
+        text-align: center; }
+        body .contact .form .botones input {
+          font-size: 0.8rem;
+          margin-left: 50px;
+          border-radius: 40%;
+          border: none;
+          padding: 10px;
+          background-color: white; } }
   body .pol {
     box-sizing: border-box;
     height: 600px;
@@ -389,7 +506,7 @@ body {
       margin: 20px;
       padding: 20px; }
       body .pol .teryco .subti {
-        font-size: 1.5rem;
+        font-size: 2rem;
         text-align: center;
         text-decoration: underline;
         padding: 10px; }
@@ -402,7 +519,7 @@ body {
       margin: 20px;
       padding: 20px; }
       body .pol .politica .subti {
-        font-size: 1.5rem;
+        font-size: 2rem;
         text-align: center;
         text-decoration: underline;
         padding: 10px; }
@@ -411,8 +528,41 @@ body {
         padding: 0.5rem;
         margin: 0.5rem;
         text-align: justify; }
+  @media only screen and (max-width: 480px) {
+    body .pol {
+      box-sizing: border-box;
+      height: 600px;
+      overflow: auto;
+      margin-top: 20px;
+      margin-bottom: 40px; }
+      body .pol .teryco {
+        margin: 10px;
+        padding: 10px; }
+        body .pol .teryco .subti {
+          font-size: 1.5rem;
+          text-align: center;
+          text-decoration: underline;
+          padding: 10px; }
+        body .pol .teryco .texto1 {
+          font-size: 0.8rem;
+          padding: 0.5rem;
+          margin: 0.5rem;
+          text-align: justify; }
+      body .pol .politica {
+        margin: 20px;
+        padding: 20px; }
+        body .pol .politica .subti {
+          font-size: 1.5rem;
+          text-align: center;
+          text-decoration: underline;
+          padding: 10px; }
+        body .pol .politica .texto2 {
+          font-size: 0.8rem;
+          padding: 0.5rem;
+          margin: 0.5rem;
+          text-align: justify; } }
   body footer {
-    background-color: rgba(186, 9, 9, 0.919);
+    background-color: black;
     margin: 0 auto;
     padding: 0 auto;
     box-sizing: border-box; }
@@ -421,33 +571,25 @@ body {
       margin-top: 10px;
       margin-left: 20px;
       border: none;
-      font-size: 10px;
-      background-color: white;
-      background-color: rgba(104, 100, 100, 0.703);
-      border-radius: 60%; }
+      background-color: #060606; }
     body footer .politicas .item2 a {
-      color: black;
+      color: #fdfcfc;
       text-decoration: none;
       font-size: 1rem;
-      font-family: "Licorice-Regular";
       margin-bottom: 0;
       margin-top: 2rem;
       padding: 0.5rem; }
     body footer .politicas .item2 a:hover {
-      color: white;
-      background-color: black;
-      border-radius: 100%;
-      opacity: 60%;
+      background-color: gray;
       padding: 10px; }
     body footer .section2 {
       list-style: none; }
       body footer .section2 h4 {
-        font-size: 1rem;
+        font-size: 0.8rem;
         display: flex;
-        color: black;
-        margin-left: 1rem;
-        padding-left: 0.5rem;
-        padding-top: 1rem;
+        color: white;
+        padding: 10px;
+        margin-left: 25px;
         text-decoration: none;
         display: list-item; }
     body footer .section3 {
@@ -455,10 +597,12 @@ body {
       padding: 0;
       text-align: right; }
       body footer .section3 .item4 {
-        height: 50px;
+        height: 40px;
         padding: 0.5rem;
         background-color: none;
-        margin-right: 1.5rem; }
+        margin-right: 1.5rem;
+        background-color: white;
+        border-radius: 40%; }
       body footer .section3 .item5 {
         height: 90px;
         padding: 1.5rem;
@@ -478,10 +622,13 @@ body {
           height: 30px;
           justify-content: center; }
     @media only screen and (max-width: 480px) {
-      body footer .section2 h4 {
-        font-size: 0.5rem; } }
+      body footer .politicas .item2 a {
+        font-size: 0.8rem; }
+      body footer .politicas .item2 a:hover {
+        background-color: gray;
+        padding: 10px; } }
     body footer h5 {
       font-size: 0.8rem;
-      color: black;
+      color: #fdfcfc;
       text-align: center;
       padding-bottom: 20px; }

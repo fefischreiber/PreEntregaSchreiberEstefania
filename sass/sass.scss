@@ -2,94 +2,110 @@
 
 @mixin servicios () {
     .icoser {
-        height: 50px;
-        width: 50px; 
+        height: 70px;
+        width: 70px; 
+        border-radius: 50%;
     }
     .subser {
         font-size: 2rem;
+        font-family: 'Handlee', cursive;
+        padding: 5px;
+        margin-top: 10px;
     }
     .descrip {
         font-size: 1.5rem;
         justify-content:center;
         padding: 15px;
+        font-family: 'Handlee', cursive;
     }
 }
-
-
 body {
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
-    background-color: rgba(104, 100, 100, 0.703);
-    box-sizing: border-box;
-
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: $bgcolor;
+    
     header {
         background-color: $rojo;
-        padding: 10px;
         list-style: none;
         text-align: center;
+        position: relative;
+        background-size:contain;
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 
         #logo{
-            text-align: center;
-            display: flex;
+            display: inline-block;
+            list-style: none;
+            margin: 10px;
 
             .logo1 {
-                width: 100px;
-                margin-left: 500px;
+                width: 200px;
+                justify-content: center;
             }
             h1 {
                 font-size: 4rem;
-                padding-left: 30px;
-                padding-top: 20px;
-            }
-            .inicio {
-                border: none;
-                background-color:white;
-                background-color: $gris;
-                border-radius: 100%;
-                margin-top: 50px;
-                padding: 10px;
-            } 
-            .inicio a{
-                color: $letra;
-                text-decoration: none;
-                font-size: 1rem;
-            } 
-            .inicio a:hover {
+                justify-content: center;
                 color: white;
-                background-color: black;
-                opacity: 60%;
-                border-radius: 100%;
-                padding: 15px;
+                font-family: 'Handlee', cursive;
+            }
+        }
+        .container-portada {
+            width: 100%;
+            height: 300px;
+            background-image: url(/produccion.jpg);
+            background-size: 200%;
+            animation: movimiento 10s infinite linear alternate;
+    
+            @keyframes movimiento {
+                from {
+                    background-position: bottom left;
+                }to {background-position: top right;
+                }
+                
+            }
+            .capa-gradient {
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                background: -webkit-linear-gradient(left,black #0672d0);
+                opacity: 0.5;
+            }
+            .container-details {
+                width: 100%;
+                max-width: 1200px;
+                text-align: center;
+    
+                .details {
+                    width: 40%;
+                    max-width: 300px;
+                    color: white;
+                    display: inline-block;
+                    padding: 40px;
+            
+                    .details img {
+                        width: 0.1px;
+                        height: 0.1px;
+                        justify-content: center;
+    
+                    }
+                }
             }
         }
     }
+
     @media only screen and (max-width: 480px) {
         header {
-            padding: 0px;
-    
-            #logo{
-                text-align: center;
-                display: flex;
-    
+            background-color: $rojo;
+            list-style: none;
+            text-align: center;
+            position: relative;
+            background-size:contain;
                 .logo1 {
-                    margin-left: 90px;
-                    margin-top: 20px;
-                    height: 40px;
-                    width: 40px;
-                }
-                h1 {
-                    font-size: 2rem;
-                    padding-left: 30px;
-                    padding-top: 20px;
-                }
-                .inicio a{
-                    font-size: 0.5rem;
-                } 
+                    height: 60px;
             }
         }
     }
+
     .navbar {
-        padding: 10px;
-        
+
         .navbar li {
             font-size: 1.5rem;
             padding: 5px;
@@ -103,74 +119,68 @@ body {
             background-color: gray;
         }
     }
-    @media only screen and (max-width: 768px){
-        .navbar li {
-        font-size: 1rem;
-        padding: 0px;
-        }
-    }
     .container{
-        padding: 60px;
-    }
+        margin-bottom: 40px;
+        }
     h3 {
         font-size: 3rem;
-        margin: 0px;
-        padding: 0px;
+        padding: 20px;
+        color: white;
         text-align: center;
         box-sizing: content-box;
+        font-family: 'Handlee', cursive;
+        background-color: black;
     }
     @media only screen and (max-width: 768px) {
         h3 {
             font-size: 2.5rem;
-            margin: 0px;
-            padding: 0px;
-            text-align: center;
+            padding: 10px;
         }
     }
     @media only screen and (max-width:768px){
         h3 {
             font-size: 2rem;
-            margin: 0px;
-            padding: 0px;
-            text-align: center;
+            padding: 5px;
        }
    }
     .presentacion {
         .nosotros{
             list-style: none;
-            padding: 20px;
+            margin: 10px;
+            padding: 5px;
             display: grid;
-            grid-template-columns: 2fr 1fr;
+            grid-template-columns: 1fr 1fr;
             grid-template-rows: 0fr 0fr;
-            gap: 15px;
+            gap: 10px;
             grid-template-areas: 
                 "subti subti"
                 "texto equipo";
                 
             .texto{
+                padding-top: 30px;
                 grid-area: texto;
                 font-size: 1.5rem;
+                font-family: 'Handlee', cursive;
             }
             .equipo {
                 grid-area: equipo;
-                size: 50px;
+                size: 40px;
 
                 .foto{
-                    height: 500px;
-                    padding-top: 20px;
+                    height: 400px;
+                    padding-top: 10px;
                 }
             }
 
         }
     }
-    @media only screen and (max-width: 768px) {
+    @media only screen and (max-width: 1000px) {
         .presentacion {
             .nosotros{
-                padding: 5px;
                 display: grid;
                 grid-template-columns: 1fr;
                 grid-template-rows: 0fr 0fr 0fr;
-                gap: 15px;
+                gap: 5px;
                 grid-template-areas: 
                     "subti"
                     "texto"
@@ -178,9 +188,7 @@ body {
     
                 .texto{
                     grid-area: texto;
-                    font-size: 1rem;
-                    padding: 0px;
-                    margin: 0px;
+                    font-size: 1.5rem;
                     text-align: center;
                 }
                 .equipo {
@@ -188,9 +196,8 @@ body {
                     size: 30px;
     
                     .foto{
-                        height: 400px;
-                        padding-top: 20px;
-                        padding-left: 80px;
+                        height: 500px;
+                        text-align: center;
                     }
                 }
             }
@@ -204,7 +211,7 @@ body {
             display: grid;
             grid-template-columns: 1fr;
             grid-template-rows: 0fr 0fr 0fr;
-            gap: 15px;
+            gap: 5px;
             grid-template-areas: 
                 "subti"
                 "texto"
@@ -221,9 +228,9 @@ body {
                     grid-area: equipo;
                     size: 20px;
                     .foto{
-                        height: 300px;
-                        padding-top: 20px;
+                        height: 200px;
                         text-align: center;
+                        padding: 5px;
                         margin: 5px;
                     }
                 }
@@ -282,7 +289,7 @@ body {
                     font-size: 1.5rem;
                 }
                 .descrip {
-                    font-size: 1.5rem;
+                    font-size: 1.2rem;
                     justify-content:center;
                     padding: 10px;
                 }
@@ -297,7 +304,7 @@ body {
                     font-size: 1.5rem;
                 }
                 .descrip {
-                    font-size: 1.5rem;
+                    font-size: 1.2rem;
                     justify-content:center;
                     padding: 10px;
                 }
@@ -312,7 +319,7 @@ body {
                     font-size: 1.5rem;
                 }
                 .descrip {
-                    font-size: 1.5rem;
+                    font-size: 1.2rem;
                     justify-content:center;
                     padding: 10px;
                 }
@@ -327,7 +334,7 @@ body {
                     font-size: 1.5rem;
                 }
                 .descrip {
-                    font-size: 1.5rem;
+                    font-size: 1.2rem;
                     justify-content:center;
                     padding: 10px;
                 }
@@ -418,11 +425,12 @@ body {
             padding: 10px;
             border-radius: 45%;
             border: none;
+            background-color: black;
         } 
         .presu1 a{
-            color: $letra;
+            color: aqua;
             text-decoration: none;
-            font-size: 1rem;
+            font-size: 1.5rem;
         } 
         .presu1 a:hover {
             color: white;
@@ -432,18 +440,43 @@ body {
             padding: 10px;
         }
     }
+    @media only screen and (max-width:768px) {
+        .presu {
+            .presu1 a{
+                color: aqua;
+                text-decoration: none;
+                font-size: 1rem;
+            } 
+        }
+    }
+    @media only screen and (max-width:480px) {
+        .presu {
+            margin: 50px;
+            text-align: center;
+            opacity: 80%;
+            .presu1 {
+                padding: 10px;
+                border-radius: 45%;
+                border: none;
+                background-color: black;
+            } 
+            .presu1 a{
+                color: aqua;
+                text-decoration: none;
+                font-size: 0.8rem;
+            } 
+        }
+    }
     .contact {
         padding: 10px;
         margin: 10px;
         display: inline;
-
         .form {
-            margin: 10px;
-            padding-left: 40px;
-            padding-top: 20px;
-            border-style: none;
-            text-align: justify;
-            
+            list-style: none;
+            text-align: center;
+            position: relative;
+            background-size:contain;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             .name {
                 .name1 {
                     font-size: 1.5rem;
@@ -461,11 +494,10 @@ body {
                 .mail1 {
                     font-size: 1.5rem;
                     padding-right: 100px;
-                    padding-left: 20px;
                 }
                 .mail2 {
                     font-size: 1rem;
-                    padding-right: 30px;
+                    padding-right: 35px;
                     border-radius: 60px;
                     width: 400px;
                 }
@@ -475,7 +507,6 @@ body {
                 .phone1 {
                     font-size: 1.5rem;
                     padding-right: 70px;
-                    padding-left: 20px;
                 }
                 .phone2 {
                     font-size: 1rem;
@@ -493,12 +524,12 @@ body {
                 .tex2 {
                     font-size: 1rem;
                     padding-right: 30px;
-                    border-radius: 60px;
+                    border-radius: 20px;
                     width: 600px;
                 }
             }
             .botones {
-                padding-left: 100px;
+                text-align: center;
 
                 input {
                     font-size: 1rem;
@@ -511,7 +542,133 @@ body {
             }
         }
     }
-
+    @media only screen and (max-width:768px) {
+        .contact {
+            padding: 10px;
+            .form {
+                text-align: center;
+                .name {
+                    .name1 {
+                        font-size: 1rem;
+                        padding-right: 50px;
+                    }
+                    .name2 {
+                        font-size: 1rem;
+                        padding-right: 20px;
+                        border-radius: 60px;
+                        width: 350px;
+                    }
+                }
+                 .mail {
+    
+                    .mail1 {
+                        font-size: 1rem;
+                        padding-right: 70px;
+                        margin-left: 20px;
+                    }
+                    .mail2 {
+                        font-size: 1rem;
+                        padding-right: 35px;
+                        border-radius: 60px;
+                        width: 400px;
+                    }
+                }
+                .phone {
+    
+                    .phone1 {
+                        font-size: 1rem;
+                        padding-right: 70px;
+                    }
+                    .phone2 {
+                        font-size: 1rem;
+                        padding-right: 30px;
+                        border-radius: 60px;
+                        width: 400px;
+                    }
+                }
+                .tex { 
+                    .tex1 {
+                        font-size: 1rem;
+                        padding-right: 30px;
+                        padding-bottom: 20px;
+                    }
+                    .tex2 {
+                        font-size: 1rem;
+                        padding-right: 30px;
+                        border-radius: 20px;
+                        width: 600px;
+                    }
+                }
+                .botones {
+                    text-align: center;
+    
+                    input {
+                        font-size: 0.8rem;
+                        margin-left: 50px;
+                        border-radius: 40%;
+                        border: none;
+                        padding: 10px;
+                        background-color: white;
+                    }
+                }
+            }
+        }
+    }    
+    
+    @media only screen and (max-width:480px) {
+        .contact {
+            padding: 10px;
+            margin: 10px;
+            display: inline;
+            .form {
+                .name {
+                    .name1 {
+                        font-size: 0.8rem;
+                    }
+                    .name2 {
+                        font-size: 0.8rem;
+                    }
+                }
+                .mail { 
+                    .mail1 {
+                        font-size: 0.8rem;
+                    }
+                    .mail2 {
+                        font-size: 0.8rem;
+    
+                    }
+                }
+                .phone { 
+                    .phone1 {
+                        font-size: 0.8rem;
+                    }
+                    .phone2 {
+                        font-size: 0.8rem;
+                    }
+                }
+                .tex { 
+                    .tex1 {
+                        font-size: 0.8rem;
+                    }
+                    .tex2 {
+                        font-size: 0.8rem;
+                    }
+                }
+                .botones {
+                    text-align: center;
+    
+                    input {
+                        font-size: 0.8rem;
+                        margin-left: 50px;
+                        border-radius: 40%;
+                        border: none;
+                        padding: 10px;
+                        background-color: white;
+                    }
+                }
+            }
+        }  
+    }
     .pol {
         box-sizing: border-box;
         height: 600px;
@@ -521,9 +678,8 @@ body {
         .teryco {
             margin: 20px;
             padding: 20px;
-
             .subti {
-                font-size: 1.5rem;
+                font-size: 2rem;
                 text-align: center;
                 text-decoration:underline;
                 padding: 10px;
@@ -541,7 +697,7 @@ body {
             padding: 20px;
 
             .subti {
-                font-size: 1.5rem;
+                font-size: 2rem;
                 text-align: center;
                 text-decoration:underline;
                 padding: 10px;
@@ -554,10 +710,53 @@ body {
             }
         
         }
-
     }  
+    @media only screen and (max-width:480px) {
+        .pol {
+            box-sizing: border-box;
+            height: 600px;
+            overflow: auto;
+            margin-top: 20px;
+            margin-bottom: 40px;
+            .teryco {
+                margin: 10px;
+                padding: 10px;
+                .subti {
+                    font-size: 1.5rem;
+                    text-align: center;
+                    text-decoration:underline;
+                    padding: 10px;
+                }
+                .texto1 {
+                    font-size: 0.8rem;
+                    padding: 0.5rem;
+                    margin: 0.5rem;
+                    text-align:justify;
+                }
+            }
+            .politica {
+                margin: 20px;
+                padding: 20px;
+            
+                .subti {
+                    font-size: 1.5rem;
+                    text-align: center;
+                    text-decoration:underline;
+                    padding: 10px;
+                }
+                .texto2 {
+                    font-size: 0.8rem;
+                    padding: 0.5rem;
+                    margin: 0.5rem;
+                    text-align:justify;
+                }
+            
+            }
+        }  
+    }
+
     footer {
-        background-color: $rojo;
+        background-color: black;
         margin: 0 auto;
         padding: 0 auto;
         box-sizing: border-box;
@@ -567,37 +766,29 @@ body {
                 margin-top: 10px;
                 margin-left: 20px;
                 border:none;
-                font-size: 10px;
-                background-color:white;
                 background-color: $gris;
-                border-radius: 60%;
             } 
             .item2 a{
                 color:$letra;
                 text-decoration: none;
                 font-size: 1rem;
-                font-family: "Licorice-Regular";
                 margin-bottom: 0;
                 margin-top: 2rem;
                 padding: 0.5rem;
             } 
             .item2 a:hover {
-                color: white;
-                background-color: black;
-                border-radius: 100%;
-                opacity: 60%;
+                background-color: gray;
                 padding: 10px;
             }
         }
         .section2 {
             list-style: none;
             h4 {
-                font-size: 1rem;
+                font-size: 0.8rem;
                 display:flex;
-                color: black;
-                margin-left: 1rem;
-                padding-left: 0.5rem;
-                padding-top: 1rem;
+                color: white;
+                padding:10px;
+                margin-left: 25px;
                 text-decoration: none;
                 display: list-item;
             }
@@ -607,10 +798,12 @@ body {
             padding: 0;
             text-align: right;
             .item4{
-                height: 50px;
+                height: 40px;
                 padding: 0.5rem;
                 background-color: none;
                 margin-right: 1.5rem;
+                background-color: white;
+                border-radius: 40%;
             }
             .item5{
                 height: 90px;
@@ -637,11 +830,16 @@ body {
             }
         }
         @media only screen and (max-width: 480px) {
-            .section2 {
-                h4 {
-                    font-size: 0.5rem;
+            .politicas {
+                .item2 a{
+                    font-size: 0.8rem;
+                } 
+                .item2 a:hover {
+                    background-color: gray;
+                    padding: 10px;
                 }
             }
+            
         }
         h5 {
             font-size: 0.8rem;
