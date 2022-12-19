@@ -11,7 +11,7 @@ body {
     body header #logo {
       display: inline-block;
       list-style: none;
-      margin: 10px; }
+      margin: 5px; }
       body header #logo .logo1 {
         width: 200px;
         justify-content: center; }
@@ -23,7 +23,7 @@ body {
     body header .container-portada {
       width: 100%;
       height: 300px;
-      background-image: url(/produccion.jpg);
+      background-image: url(../produccion.jpg);
       background-size: 200%;
       animation: movimiento 10s infinite linear alternate; }
 
@@ -90,7 +90,7 @@ body {
       padding: 5px; } }
   body .presentacion .nosotros {
     list-style: none;
-    margin: 10px;
+    margin: 5px;
     padding: 5px;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -100,11 +100,11 @@ body {
     body .presentacion .nosotros .texto {
       padding-top: 30px;
       grid-area: texto;
-      font-size: 1.5rem;
+      font-size: 1rem;
       font-family: 'Handlee', cursive; }
     body .presentacion .nosotros .equipo {
       grid-area: equipo;
-      size: 40px; }
+      text-align: center; }
       body .presentacion .nosotros .equipo .foto {
         height: 400px;
         padding-top: 10px; }
@@ -117,13 +117,28 @@ body {
       grid-template-areas: "subti" "texto" "equipo"; }
       body .presentacion .nosotros .texto {
         grid-area: texto;
-        font-size: 1.5rem;
+        font-size: 1rem;
         text-align: center; }
       body .presentacion .nosotros .equipo {
         grid-area: equipo;
         size: 30px; }
         body .presentacion .nosotros .equipo .foto {
-          height: 500px;
+          height: 350px;
+          text-align: center; } }
+  @media only screen and (max-width: 768px) {
+    body .presentacion .nosotros {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 0fr 0fr 0fr;
+      grid-template-areas: "subti" "texto" "equipo"; }
+      body .presentacion .nosotros .texto {
+        grid-area: texto;
+        font-size: 0.8rem;
+        text-align: center; }
+      body .presentacion .nosotros .equipo {
+        grid-area: equipo; }
+        body .presentacion .nosotros .equipo .foto {
+          height: 300px;
           text-align: center; } }
   @media only screen and (max-width: 480px) {
     body .presentacion .nosotros {
@@ -137,16 +152,13 @@ body {
         grid-area: texto;
         font-size: 1rem;
         padding: 5px;
-        margin: 5px;
         text-align: center; }
       body .presentacion .nosotros .equipo {
-        grid-area: equipo;
-        size: 20px; }
+        grid-area: equipo; }
         body .presentacion .nosotros .equipo .foto {
-          height: 200px;
+          height: 150px;
           text-align: center;
-          padding: 5px;
-          margin: 5px; } }
+          padding: 5px; } }
   body .servicios {
     margin: 30px;
     padding: 20px;

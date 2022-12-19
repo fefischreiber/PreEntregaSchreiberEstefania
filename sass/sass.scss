@@ -34,7 +34,7 @@ body {
         #logo{
             display: inline-block;
             list-style: none;
-            margin: 10px;
+            margin: 5px;
 
             .logo1 {
                 width: 200px;
@@ -50,7 +50,7 @@ body {
         .container-portada {
             width: 100%;
             height: 300px;
-            background-image: url(/produccion.jpg);
+            background-image: url(../produccion.jpg);
             background-size: 200%;
             animation: movimiento 10s infinite linear alternate;
     
@@ -90,7 +90,6 @@ body {
             }
         }
     }
-
     @media only screen and (max-width: 480px) {
         header {
             background-color: $rojo;
@@ -103,7 +102,6 @@ body {
             }
         }
     }
-
     .navbar {
 
         .navbar li {
@@ -146,7 +144,7 @@ body {
     .presentacion {
         .nosotros{
             list-style: none;
-            margin: 10px;
+            margin: 5px;
             padding: 5px;
             display: grid;
             grid-template-columns: 1fr 1fr;
@@ -159,13 +157,12 @@ body {
             .texto{
                 padding-top: 30px;
                 grid-area: texto;
-                font-size: 1.5rem;
+                font-size: 1rem;
                 font-family: 'Handlee', cursive;
             }
             .equipo {
                 grid-area: equipo;
-                size: 40px;
-
+                text-align: center;
                 .foto{
                     height: 400px;
                     padding-top: 10px;
@@ -188,7 +185,7 @@ body {
     
                 .texto{
                     grid-area: texto;
-                    font-size: 1.5rem;
+                    font-size: 1rem;
                     text-align: center;
                 }
                 .equipo {
@@ -196,7 +193,33 @@ body {
                     size: 30px;
     
                     .foto{
-                        height: 500px;
+                        height: 350px;
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    }
+    @media only screen and (max-width: 768px) {
+        .presentacion {
+            .nosotros{
+                display: grid;
+                grid-template-columns: 1fr;
+                grid-template-rows: 0fr 0fr 0fr;
+                grid-template-areas: 
+                    "subti"
+                    "texto"
+                    "equipo";
+    
+                .texto{
+                    grid-area: texto;
+                    font-size: 0.8rem;
+                    text-align: center;
+                }
+                .equipo {
+                    grid-area: equipo;
+                    .foto{
+                        height: 300px;
                         text-align: center;
                     }
                 }
@@ -221,17 +244,15 @@ body {
                     grid-area: texto;
                     font-size: 1rem;
                     padding: 5px;
-                    margin: 5px;
                     text-align: center;
                 }
                 .equipo {
                     grid-area: equipo;
-                    size: 20px;
+
                     .foto{
-                        height: 200px;
+                        height: 150px;
                         text-align: center;
                         padding: 5px;
-                        margin: 5px;
                     }
                 }
             }
