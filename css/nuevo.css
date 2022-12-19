@@ -13,7 +13,7 @@ body {
       list-style: none;
       margin: 5px; }
       body header #logo .logo1 {
-        width: 200px;
+        height: 80px;
         justify-content: center; }
       body header #logo h1 {
         font-size: 4rem;
@@ -21,7 +21,6 @@ body {
         color: white;
         font-family: 'Handlee', cursive; }
     body header .container-portada {
-      width: 100%;
       height: 300px;
       background-image: url(../produccion.jpg);
       background-size: 200%;
@@ -33,23 +32,17 @@ body {
   to {
     background-position: top right; } }
       body header .container-portada .capa-gradient {
-        width: 100%;
         height: 100%;
         position: absolute;
         background: -webkit-linear-gradient(left, black #0672d0);
         opacity: 0.5; }
       body header .container-portada .container-details {
-        width: 100%;
-        max-width: 1200px;
         text-align: center; }
         body header .container-portada .container-details .details {
-          width: 40%;
-          max-width: 300px;
           color: white;
           display: inline-block;
           padding: 40px; }
           body header .container-portada .container-details .details .details img {
-            width: 0.1px;
             height: 0.1px;
             justify-content: center; }
   @media only screen and (max-width: 480px) {

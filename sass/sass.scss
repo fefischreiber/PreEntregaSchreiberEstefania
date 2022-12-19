@@ -21,8 +21,7 @@
 }
 body {
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: $bgcolor;
-    
+    background-color: $bgcolor;    
     header {
         background-color: $rojo;
         list-style: none;
@@ -30,14 +29,13 @@ body {
         position: relative;
         background-size:contain;
         font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-
         #logo{
             display: inline-block;
             list-style: none;
             margin: 5px;
 
             .logo1 {
-                width: 200px;
+                height: 80px;
                 justify-content: center;
             }
             h1 {
@@ -48,7 +46,6 @@ body {
             }
         }
         .container-portada {
-            width: 100%;
             height: 300px;
             background-image: url(../produccion.jpg);
             background-size: 200%;
@@ -62,26 +59,20 @@ body {
                 
             }
             .capa-gradient {
-                width: 100%;
                 height: 100%;
                 position: absolute;
                 background: -webkit-linear-gradient(left,black #0672d0);
                 opacity: 0.5;
             }
             .container-details {
-                width: 100%;
-                max-width: 1200px;
                 text-align: center;
     
                 .details {
-                    width: 40%;
-                    max-width: 300px;
                     color: white;
                     display: inline-block;
                     padding: 40px;
             
                     .details img {
-                        width: 0.1px;
                         height: 0.1px;
                         justify-content: center;
     
