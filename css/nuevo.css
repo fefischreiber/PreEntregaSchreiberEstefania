@@ -7,7 +7,8 @@ body {
     text-align: center;
     position: relative;
     background-size: contain;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 100vw; }
     body header #logo {
       display: inline-block;
       list-style: none;
@@ -15,11 +16,6 @@ body {
       body header #logo .logo1 {
         height: 80px;
         justify-content: center; }
-      body header #logo h1 {
-        font-size: 4rem;
-        justify-content: center;
-        color: white;
-        font-family: 'Handlee', cursive; }
     body header .container-portada {
       height: 300px;
       background-image: url(../produccion.jpg);
@@ -53,10 +49,9 @@ body {
       position: relative;
       background-size: contain; }
       body header .logo1 {
-        height: 60px; } }
+        width: 90px; } }
   body .navbar .navbar li {
-    font-size: 1.5rem;
-    padding: 5px; }
+    font-size: 1.5rem; }
   body .navbar .navbar li:hover {
     border-radius: 90%;
     opacity: 50%;
@@ -64,10 +59,10 @@ body {
   body .navbar .nav-item:hover {
     background-color: gray; }
   body .container {
-    margin-bottom: 40px; }
+    margin-bottom: 20px; }
   body h3 {
+    width: 100vw;
     font-size: 3rem;
-    padding: 20px;
     color: white;
     text-align: center;
     box-sizing: content-box;
@@ -75,12 +70,10 @@ body {
     background-color: black; }
   @media only screen and (max-width: 768px) {
     body h3 {
-      font-size: 2.5rem;
-      padding: 10px; } }
+      font-size: 2.5rem; } }
   @media only screen and (max-width: 768px) {
     body h3 {
-      font-size: 2rem;
-      padding: 5px; } }
+      font-size: 2rem; } }
   body .presentacion .nosotros {
     list-style: none;
     margin: 5px;
@@ -93,7 +86,7 @@ body {
     body .presentacion .nosotros .texto {
       padding-top: 30px;
       grid-area: texto;
-      font-size: 1rem;
+      font-size: 1.2rem;
       font-family: 'Handlee', cursive; }
     body .presentacion .nosotros .equipo {
       grid-area: equipo;
@@ -110,7 +103,7 @@ body {
       grid-template-areas: "subti" "texto" "equipo"; }
       body .presentacion .nosotros .texto {
         grid-area: texto;
-        font-size: 1rem;
+        font-size: 1.2rem;
         text-align: center; }
       body .presentacion .nosotros .equipo {
         grid-area: equipo;
@@ -126,7 +119,7 @@ body {
       grid-template-areas: "subti" "texto" "equipo"; }
       body .presentacion .nosotros .texto {
         grid-area: texto;
-        font-size: 0.8rem;
+        font-size: 1rem;
         text-align: center; }
       body .presentacion .nosotros .equipo {
         grid-area: equipo; }
@@ -378,8 +371,6 @@ body {
     body .contact .form {
       list-style: none;
       text-align: center;
-      position: relative;
-      background-size: contain;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
       body .contact .form .name .name1 {
         font-size: 1.5rem;
@@ -388,7 +379,7 @@ body {
         font-size: 1rem;
         padding-right: 20px;
         border-radius: 60px;
-        width: 350px; }
+        width: 300px; }
       body .contact .form .mail .mail1 {
         font-size: 1.5rem;
         padding-right: 100px; }
@@ -396,7 +387,7 @@ body {
         font-size: 1rem;
         padding-right: 35px;
         border-radius: 60px;
-        width: 400px; }
+        width: 350px; }
       body .contact .form .phone .phone1 {
         font-size: 1.5rem;
         padding-right: 70px; }
@@ -404,7 +395,7 @@ body {
         font-size: 1rem;
         padding-right: 30px;
         border-radius: 60px;
-        width: 400px; }
+        width: 350px; }
       body .contact .form .tex .tex1 {
         font-size: 1.5rem;
         padding-right: 30px;
@@ -418,10 +409,9 @@ body {
         text-align: center; }
         body .contact .form .botones input {
           font-size: 1rem;
-          margin-left: 50px;
           border-radius: 40%;
           border: none;
-          padding: 10px;
+          margin: 30px;
           background-color: white; }
   @media only screen and (max-width: 768px) {
     body .contact {
@@ -435,7 +425,7 @@ body {
           font-size: 1rem;
           padding-right: 20px;
           border-radius: 60px;
-          width: 350px; }
+          width: 200px; }
         body .contact .form .mail .mail1 {
           font-size: 1rem;
           padding-right: 70px;
@@ -444,7 +434,7 @@ body {
           font-size: 1rem;
           padding-right: 35px;
           border-radius: 60px;
-          width: 400px; }
+          width: 250px; }
         body .contact .form .phone .phone1 {
           font-size: 1rem;
           padding-right: 70px; }
@@ -452,7 +442,7 @@ body {
           font-size: 1rem;
           padding-right: 30px;
           border-radius: 60px;
-          width: 400px; }
+          width: 250px; }
         body .contact .form .tex .tex1 {
           font-size: 1rem;
           padding-right: 30px;
@@ -461,12 +451,11 @@ body {
           font-size: 1rem;
           padding-right: 30px;
           border-radius: 20px;
-          width: 600px; }
+          width: 450px; }
         body .contact .form .botones {
           text-align: center; }
           body .contact .form .botones input {
             font-size: 0.8rem;
-            margin-left: 50px;
             border-radius: 40%;
             border: none;
             padding: 10px;
@@ -479,11 +468,13 @@ body {
       body .contact .form .name .name1 {
         font-size: 0.8rem; }
       body .contact .form .name .name2 {
-        font-size: 0.8rem; }
+        font-size: 0.8rem;
+        width: 250px; }
       body .contact .form .mail .mail1 {
         font-size: 0.8rem; }
       body .contact .form .mail .mail2 {
-        font-size: 0.8rem; }
+        font-size: 0.8rem;
+        width: 250px; }
       body .contact .form .phone .phone1 {
         font-size: 0.8rem; }
       body .contact .form .phone .phone2 {
@@ -491,16 +482,8 @@ body {
       body .contact .form .tex .tex1 {
         font-size: 0.8rem; }
       body .contact .form .tex .tex2 {
-        font-size: 0.8rem; }
-      body .contact .form .botones {
-        text-align: center; }
-        body .contact .form .botones input {
-          font-size: 0.8rem;
-          margin-left: 50px;
-          border-radius: 40%;
-          border: none;
-          padding: 10px;
-          background-color: white; } }
+        font-size: 0.8rem;
+        width: 300px; } }
   body .pol {
     box-sizing: border-box;
     height: 600px;
@@ -567,6 +550,7 @@ body {
           margin: 0.5rem;
           text-align: justify; } }
   body footer {
+    width: 100vw;
     background-color: black;
     margin: 0 auto;
     padding: 0 auto;
